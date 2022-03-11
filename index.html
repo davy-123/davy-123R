@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height:2700px;
+            background-image:url('https://b.rgbimg.com/users/c/ch/chiandra4u/600/mQYiPxS.jpg');
+            background-size:1550px 1000px;
+        }
+        img{
+            margin-left:20px;
+            margin-top:20px;
+            display:inline-block;
+            width:220px;
+            height:250px;
+            background-color:black;
+            border:3px solid black;
+            border-radius:10px;
+        }
+        h1{
+            text-decoration:underline;
+            display:inline-block;
+            margin-top:15px;
+            width:450px;
+            height:50px;
+            margin-left:300px;
+            font-weight:bold;
+            font-size:70px;
+            /* border:2px solid black; */
+        }
+        #p1{
+            height:10px;
+            display:inline-block;
+            margin-top:100px;
+            font-size:23px;
+            color:black;
+            margin-left:10px;
+            font-weight:bold;
+        }
+        strong{
+            font-size:25px;
+        }
+        #s{
+            font-size:30px;
+            /* text-decoration:underline; */
+            margin-left:70px;
+            background-color:rgb(167, 71, 71);
+            color:white;
+
+        }
+        #container{
+            margin:30px 100px;
+            display:grid;
+            grid-template-columns:repeat(2,200px);
+            grid-gap:5px;
+        }
+        .d{
+            height:50px;
+            background-color:rgb(218, 196, 150);
+            border:2px solid black;
+        }
+        #d1,#d3,#d5,#d7,#d9,#d11{
+            padding:10px 20px;
+            font-weight:bold;
+            font-size:20px;
+        }
+        #d2,#d4,#d6,#d8,#d10,#d12{
+            padding:5px;
+            /* font-weight:bold; */
+            font-size:17px;
+        }
+        .Q{
+            margin-top:50px;
+            display:grid;
+            grid-template-columns:repeat(1,300px);
+        }
+        .Q2{
+            width:1200px;
+            margin-left:100px;
+            margin-top:50px;
+            display:grid;
+            grid-template-columns:repeat(4,300px);
+            grid-gap:2px;
+            background-color:rgb(218, 196, 150);
+        }
+        h2{
+            width:150px;
+            background-color:rgb(167, 71, 71);
+            color:white;
+            font-size:30px;
+        }
+        .q{
+            height:100px;
+            border:5px solid black;
+            /* box-shadow:10px gray; */
+        }
+        .sk{
+            margin-top:50px;
+        }
+        li{
+            font-size:25px;
+            margin-left:15px;
+            font-weight:bold;
+        }
+        #q1,#q2,#q3{
+            font-size:30px;
+            padding:20px 50px;
+            font-weight:bold;
+            text-decoration:underline;
+        }
+        #q4{
+            padding:20px 80px;
+            font-size:30px;
+            font-weight:bold;
+            text-decoration:underline;
+        }
+        #q5,#q9{
+            font-size:30px;
+            padding:20px 100px;
+            /* font-weight:bold; */
+        }
+        #q13{
+            padding:20px 10px;
+            font-size:30px;
+        }
+        #q6,#q10,#q14{
+            font-size:30px;
+            padding:25px 50px;
+            /* font-weight:bold; */
+        }
+        #q7,#q11{
+            font-size:30px;
+            padding:25px 100px;
+            /* font-weight:bold; */
+        }
+        #q15{
+            font-size:30px;
+            padding:25px 70px;
+            
+        }
+        #q8,#q12,#q16{
+            font-size:30px;
+            padding:25px 80px;
+            /* font-weight:bold; */
+        }
+        #H1{
+            font-size:35px;
+            margin-left:30px;
+            width:400px;
+        }
+        #H2{
+            margin-left:70px;
+            width:150px;
+        }
+        #H3{
+            font-size:35px;
+            margin-left:30px;
+            width:540px;
+        }
+        .Ach{
+            margin-top:40px;
+        }
+        #is{
+            width:250px;
+            font-size:30px;
+            font-weight:bold;
+            margin-left:20px;
+            /* width:200px; */
+            color:white;
+            background-color:rgb(167, 71, 71);
+        }
+        span{
+            margin-left:30px;
+            font-size:20px;
+        }
+        .cntct{
+            display:grid;
+            grid-template-columns:repeat(2,150px);
+        }
+        .cntct1{
+            width:500px;
+        }
+        .cntct2{
+            margin-left:100px;
+            display:grid;
+            grid-template-columns:repeat(1,100px);
+        }
+        .cntct21{
+            font-size:30px;
+            width:500px;
+            margin:30px 400px;
+            font-weight:bold;
+            text-decoration:underline;
+        }
+        .cntct22{
+            display:grid;
+            grid-template-columns:repeat(5,50px);
+            grid-gap:50px;
+            margin-left:300px;
+            margin-top:0px;
+        }
+        .cntct23{
+            font-size:25px;
+            width:500px;
+            margin:30px 390px;
+        }
+        .A{
+            width:70px;
+            height:70px;
+            animation:davy 2s infinite;
+            transition:all 2s;
+            border:2px solid black;
+            border-radius:10px;
+        }
+        .A:hover{
+            transform:scale(1.1);
+        }
+        @keyframes davy{
+            from{
+                filter:hue-rotate(0deg);
+            }
+            to{
+                filter:hue-rotate(360deg);
+            }
+        }
+        #a1{
+            background-image:url('https://www.fpsa.org/wp-content/uploads/linkedin-logo-copy.png');
+            background-size:70px 70px;
+        }
+        #a2{
+            background-image:url('https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_1280.png');
+            background-size:70px 70px;
+        }
+        #a3{
+            background-image:url('https://iconape.com/wp-content/files/ja/99792/svg/snapchat.svg');
+            background-size:70px 70px;
+        }
+        #a4{
+            background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmexTEn3l7dXaOqQNeaW_8RLCIp7gNSQsJLyGcY_pXAXa64Db-SjJpyC3QTfvnr4YwkncSVKnNOyk&usqp=CAU');
+            background-size:70px 65px;
+        }
+        #a5{
+            background-image:url('https://1000logos.net/wp-content/uploads/2017/02/Instagram-app-logo.jpg');
+            background-size:70px 75px;
+        }
+        #h{
+            margin:100px 300px;
+            width:500px;
+            height:0px;
+        }
+        #l{
+            font-weight:normal;
+        }
+        #k{
+            background-color:skyblue;
+            margin:10px 0px;
+            width:270px;
+            color:black;
+            font-size:40px;
+        }
+        marquee{
+            /* width:500px; */
+            font-size:23px;
+        }
+        img[src="TTT.png"]{
+            width:900px;
+            height:600px;
+        }
+        #TTT{
+            width:400px;
+            height:400px;
+            margin-left:200px;
+        }
+        nav{
+            display:flex;
+            width:100vw;
+            height:13vh;
+            background-color: #be3144;
+            margin-top:-9px;
+            margin-left:-9px;
+        }
+        span{
+            font-size:30px;
+            margin-top:100px;
+            height:13vh;
+        }
+        span:hover{
+            background-color:rgb(78, 78, 152);
+        }
+        a[href=""]{
+            text-decoration:none;
+            color:white;
+        }
+        #ab{
+            margin-top:30px;
+            margin-left:50px;
+        }
+        #sg{
+            margin-left:700px;
+            margin-top:30px;
+        }
+        button{
+            width:110px;
+            height:40px;
+            font-size:20px;
+            border-radius:7px;
+        }
+        #b1{
+            background-color:rgb(14, 198, 14);
+        }
+        #b1:hover{
+            background-color:green;
+            color:white;
+        }
+        #b2{
+            background-color:rgb(121, 121, 121);
+            color:white;
+        }
+        #b2:hover{
+            background-color:rgb(155, 162, 155);
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <img src="davy.png" width="220px" height="250px">
+    <h1>My RESUME</h1>
+    <marquee id="m" direction="up" scrollamount="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Davy Bansal</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>B.E.(CSE)</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>UE203033</b>
+    </marquee>
+    <p id="p1"><strong id="s">&nbsp;About Me</strong><br><br>Hello , My name is Davy Bansal.I am pursuing B.E. in CSE from University Institute of Engineering and Technology,Panjab University Chandigarh.I am a Web Developer. I am always energetic and eager to learn new skills.I am a hard working and smart working student.</p>
+    <div id="container">
+        <div class="d" id="d1">Name :</div>
+        <div class="d" id="d2">Davy Bansal</div>
+        <div class="d" id="d3">DOB :</div>
+        <div class="d" id="d4">14-June-2002</div>
+        <div class="d" id="d5">PHONE :</div>
+        <div class="d" id="d6">&#128241;9464580663</div>
+        <div class="d" id="d7">EMAIL :</div>
+        <div class="d" id="d8">davybansal33@gmail.com</div>
+        <div class="d" id="d9">NATIONALITY :</div>
+        <div class="d" id="d10">INDIAN</div>
+        <div class="d" id="d11">ADDRESS :</div>
+        <div class="d" id="d12">Near guruduwara village Bhokhra distt. Bathinda</div>
+    </div>
+    <div class="Q">
+        <div class="Q1">
+
+            <h2 id="H1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qualification Details</h2>
+        </div>
+        <div class="Q2"> 
+            <div class="q" id="q1">Qualification</div>
+            <div class="q" id="q2">Board</div>
+            <div class="q" id="q3">Percentage</div>
+            <div class="q" id="q4">Year</div>
+            <div class="q" id="q5">10th</div>
+            <div class="q" id="q6">CBSE</div>
+            <div class="q" id="q7">91%</div>
+            <div class="q" id="q8">2018</div>
+            <div class="q" id="q9">12th</div>
+            <div class="q" id="q10">CBSE</div>
+            <div class="q" id="q11">94%</div>
+            <div class="q" id="q12">2020</div>
+            <div class="q" id="q13">B.E.(CSE) in 1st Year</div>
+            <div class="q" id="q14">UIET(Chd)</div>
+            <div class="q" id="q15">9.60 CGPA</div>
+            <div class="q" id="q16">2021</div>
+        </div>
+    </div>
+    <hr>
+    <div class="sk">
+        <h2 id="H2">&nbsp;&nbsp;&nbsp;SKILLS</h2>
+        <ul type="square">
+            <li>Frontend Web Developer (HTML,CSS,JS,REACT.JS) </li><br>
+            <li><strong>C</strong> Programming Language</li><br>
+            <li><strong>C++</strong> Programming Language</li><br>
+            <li><strong>Python</strong> Programming Language&nbsp;&nbsp;(Basics)</li><br>
+            <li>Good Problem solving skills</li><br>
+            <li>Good Knowledge of DSA and consistently doing it.</li><br>
+            <li>Cooperative.</li><br>
+            <li>Confident.</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="Ach">
+        <h2 id="H3">&nbsp;&nbsp;&nbsp;&nbsp;Achievements and Experiences</h2>
+        <ul type="square">
+            <li>5&#11088; in C / C++ on HackerRank</li><br>
+            <li>3&#11088; in Python on HackerRank</li><br>
+            <li>3&#11088; on leetocde (Solved 400+ questions )</li><br>
+            <li>2&#11088; on CodeChef</li><br>
+            <li>Made a Responsive Tic-Tac-Toe game using Web-Development&nbsp;(Front-End)</li><br>
+            <img src="TTT.png" width="400px" height="400px"><br><br>
+            <li>Made a Project on Hostel-Management-System using C++ in team <a href="https://github.com/davy-123/OOPS-PROJECT" target="_blank"> (Hostel Management System)</a></li>   
+        </ul>
+    </div>
+    <hr>
+    <div class="cntct">
+        <div class="cntct1">    
+            <p id="is">&nbsp;&nbsp;&nbsp;Contact Details : </p>
+            <ol type="1">
+                <li id="l">Name - Davy Bansal</li>
+                <li id="l">Email - davybansal33@gmail.com</li>
+                <li id="l">Mobile - &#128241;8837881446</li>
+            </ol>
+        </div>
+        <div class="cntct2">
+            <div class="cntct21">Also have Accounts On</div>
+            <div class="cntct22">
+                <a class="A" id="a1" href="https://www.linkedin.com/in/davy-bansal-446b49209/" target="_blank"></a>    
+                <a class="A" id="a2" href="https://facebook.com" target="_blank"></a>
+                <a class="A" id="a3" href="https://instagram.com" target="_blank"></a>
+                <a class="A" id="a4" href="https://github.com" target="_blank"></a>
+                <a class="A" id="a5" href="https://snapchat.com" target="_blank"></a>
+            </div>
+            <div class="cntct23">Click on icons to see my Profile</div>
+        </div>
+    </div>
+    <script>
+        let val=document.getElementById('m');
+        val.addEventListener('mouseover',function run(){
+            this.stop();
+        });
+        val.addEventListener('mouseout',function run(){
+            this.start();
+        });
+        function print()
+        {
+            
+        }
+    </script>
+</body>
+</html>
